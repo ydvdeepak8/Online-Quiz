@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz Maker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Online Quiz Maker</h1>
+            <nav>
+                <button id="createQuizBtn">Create Quiz</button>
+                <button id="takeQuizBtn">Take Quiz</button>
+                <button id="quizListBtn">Quiz List</button>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Welcome Section -->
+            <section id="welcomeSection">
+                <h2>Welcome to the Online Quiz Maker</h2>
+                <p>Create a new quiz or take an existing one.</p>
+            </section>
+
+            <!-- Create Quiz Section -->
+            <section id="createQuizSection" class="hidden">
+                <h2>Create a Quiz</h2>
+                <form id="quizForm">
+                    <div id="questionContainer"></div>
+                    <button type="button" id="addQuestionBtn">Add Question</button>
+                    <button type="submit">Save Quiz</button>
+                </form>
+            </section>
+
+            <!-- Take Quiz Section -->
+            <section id="takeQuizSection" class="hidden">
+                <h2>Take a Quiz</h2>
+                <div id="quizContainer"></div>
+                <button id="submitQuizBtn" class="hidden">Submit Quiz</button>
+            </section>
+
+            <!-- Quiz Results Section -->
+            <section id="quizResultsSection" class="hidden">
+                <h2>Quiz Results</h2>
+                <p id="results"></p>
+                <button id="retryQuizBtn">Retry Quiz</button>
+            </section>
+
+            <!-- Quiz List Section -->
+            <section id="quizListSection" class="hidden">
+                <h2>Available Quizzes</h2>
+                <div id="quizList"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
